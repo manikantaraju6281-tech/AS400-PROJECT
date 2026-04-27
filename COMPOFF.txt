@@ -1,0 +1,9 @@
+0001.00 A               R PFREC               
+0002.00 A                 EMPID          5S 0 
+0003.00 A                 WRKDATE        8S 0 
+0004.00 A                 DAYTYPE        2A   
+0005.00 A                 REASON       100A   
+0006.00 A                 STATUS         1A   
+0006.01 A                 TOTALDAY      10S 0 
+0007.00 A                 PRCTID         5S 0 
+0008.00 A               K EMPID               

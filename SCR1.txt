@@ -1,0 +1,23 @@
+0000.10      A*%%TS  SD  20260404  064720  MANI0011    REL-V7R5M0  5770-WDS  
+0000.20      A*%%EC                                                          
+0000.30      A                                      DSPSIZ(24 80 *DS3)       
+0000.40      A          R SCREEEN1                                           
+0000.50      A*%%TS  SD  20260404  064720  MANI0011    REL-V7R5M0  5770-WDS  
+0000.60      A                                      CF03(03 'EXIT')          
+0000.70      A                                      CF12(12 'CANCEL')        
+0000.80      A                                      CF05(05 'REFRESH')       
+0000.90      A                                  1  2USER                     
+0001.00      A            PGMNAME       10A  O  2  2                         
+0001.10      A                                  1 36'LOGIN PAGE'             
+0001.20      A                                      COLOR(WHT)               
+0001.30      A                                  1 71DATE                     
+0001.40      A                                      EDTCDE(Y)                
+0001.50      A                                  2 71TIME                     
+0001.60      A                                  8 17'USERNAME      :'        
+0001.70      A                                 10 17'PASSWORD      :' 
+0001.80      A            $USERNAME     15A  B  8 37                  
+0001.90      A            $PASSWORD     10A  B 10 37                  
+0002.00      A            MSG           20A  O 24  4                  
+0002.10      A                                 23  4'F3=EXIT'         
+0002.20      A                                 23 20'F12=CANCEL'      
+0002.30      A                                 23 40'F5=REFRESH'      

@@ -1,0 +1,22 @@
+0001.00 FSCREEN5   CF   E             WORKSTN       
+0002.00 C                   DOW       *IN03=*OFF    
+0003.00 C                   EXFMT     SCR5          
+0003.01 C                   SELECT                  
+0003.02 C                   WHEN      $OPTION='1'   
+0003.03 C                   CALL      'RPG14'       
+0003.04 C                   WHEN      $OPTION='2'   
+0003.05 C                   CALL      'RPG15'       
+0003.06 C                   WHEN      $OPTION='3'   
+0003.07 C                   CALL      'RPG16'       
+0003.08 C                   WHEN      $OPTION='4'   
+0003.09 C                   CALL      'RPG17'       
+0003.10 C                   WHEN      $OPTION='5'   
+0003.11 C                   CALL      'RPG11'       
+0003.12 C                   WHEN      $OPTION='6'   
+0003.13 C                   CALL      'RPG19'       
+0003.14 C                   WHEN      $OPTION='7'    
+0003.15 C                   CALL      'RPG20'        
+0003.16 C                   ENDSL                    
+0003.17 C                   EVAL      $OPTION=*blanks
+0004.00 C                   ENDDO                    
+0005.00 C                   EVAL      *INLR=*ON  

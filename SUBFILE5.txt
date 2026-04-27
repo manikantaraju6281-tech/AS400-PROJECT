@@ -1,0 +1,86 @@
+0000.10      A*%%TS  SD  20260425  175418  MANI0011    REL-V7R5M0  5770-WDS     
+0000.20      A*%%EC                                                             
+0000.30      A                                      DSPSIZ(24 80 *DS3)          
+0000.40      A          R FOOTER                                                
+0000.50      A*%%TS  SD  20260408  130803  MANI0011    REL-V7R5M0  5770-WDS     
+0000.60      A                                      OVERLAY                     
+0000.70      A                                 23  5'F3=EXIT'                   
+0000.80      A                                 23 21'F5=REFRESH'                
+0000.90      A                                 23 41'F12=CANCL'                 
+0001.00      A          R VIEWDESC12                                            
+0001.10      A*%%TS  SD  20260425  175418  MANI0011    REL-V7R5M0  5770-WDS     
+0001.20      A                                      CF03(03 'EXIT')             
+0001.30      A                                      CF05(05 'REFRESH')          
+0001.40      A                                      CF12(12 'CANCEL')           
+0001.50      A                                  1  3'USER: MANAGER'             
+0001.60      A                                  1 25'EMPLOYEE LEAVE MANAGEMENT  
+0001.70      A                                      DSPATR(HI)                  
+0001.80      A                                  2 31'COMP OFF DESCRIPTION'      
+0001.90      A                                      DSPATR(HI)                  
+0002.00      A                                  1 72DATE                        
+0002.10      A                                      EDTCDE(Y)                   
+0002.20      A                                  2 72TIME                        
+0002.30      A                                  4  3'Select one of the followin 
+0002.40      A                                  6  5'1=Approve'                 
+0002.50      A                                      COLOR(BLU)                  
+0002.60      A                                  6 24'2=Deny'         
+0002.70      A                                      COLOR(BLU)       
+0002.80      A                                  8  4'EMPLOYEE ID:'   
+0002.90      A                                 10  4'WORKED DATE:'   
+0003.00      A                                 12  4'DAY TYPE:'      
+0003.10      A                                 14  4'REASON:'        
+0003.20      A                                 16  4'STATUS:'        
+0003.30      A                                 18  4'PROJECT ID:'    
+0003.40      A                                  8 39'EMPLOYEE NAME:' 
+0003.50      A            $EMPID1        5S 0B  8 18DSPATR(HI)          
+0003.60      A            $EMPNAME1     10A  B  8 55DSPATR(HI)          
+0003.70      A            $WRKDATE1      8Y 0B 10 18DSPATR(HI)          
+0003.80      A                                      EDTWRD('  /  /    ')
+0003.90      A            $DAYTYPE1      2A  B 12 15DSPATR(HI)          
+0004.00      A            $REASON1      50A  B 14 14DSPATR(HI)          
+0004.10      A            $STATUS1       1A  B 16 13DSPATR(HI)          
+0004.20      A            $PRJCTID1      5S 0B 18 18DSPATR(HI)          
+0004.30      A                                 20  5'Selection ===>'    
+0004.40      A            $OPT1          1S 0B 20 21DSPATR(HI)                
+0004.50      A                                 23  6'F3=EXIT'                 
+0004.60      A                                 23 23'F12=CANCEL'              
+0004.70      A                                 23 46'F5=REFRESH'              
+0004.80      A            $MSG          30A  O 24  4                          
+0004.90      A          R SFLRCD                    SFL                       
+0005.00      A*%%TS  SD  20260425  175418  MANI0011    REL-V7R5M0  5770-WDS   
+0005.10      A            OPT            1S 0B  9  4                          
+0005.20      A            $EMPID         5S 0B  9 11                          
+0005.30      A            $EMPNAME      10A  B  9 20                       
+0005.40      A            $WRKDATE       8Y 0B  9 35EDTWRD('  /  /    ')   
+0005.50      A            $DAYTYPE       2A  B  9 58                       
+0005.60      A            $STATUS        1A  B  9 73                       
+0005.70      A          R SFLCTL                    SFLCTL(SFLRCD)         
+0005.80      A*%%TS  SD  20260408  130803  MANI0011    REL-V7R5M0  5770-WDS
+0005.90      A                                      CF03(03 'EXIT')        
+0006.00      A                                      CF05(05 'REFRESH')     
+0006.10      A                                      CF12(12 'CANCEL')      
+0006.20      A                                      OVERLAY                     
+0006.30      A  25                                  SFLDSP                      
+0006.40      A  26                                  SFLDSPCTL                   
+0006.50      A  27                                  SFLCLR                      
+0006.60      A  28                                  SFLEND(*MORE)               
+0006.70      A                                      SFLSIZ(9999)                
+0006.80      A                                      SFLPAG(0010)                
+0006.90      A                                  1  3'USER : MANAGER'            
+0007.00      A                                  1 25'EMPLOYEE LEAVE MANAGEMENT  
+0007.10      A                                      DSPATR(HI)                  
+0007.20      A                                  2 30'APPROVE/DENY COMP OFFS'    
+0007.30      A                                      DSPATR(HI)                  
+0007.40      A                                  1 73DATE                        
+0007.50      A                                      EDTCDE(Y)                   
+0007.60      A                                  2 73TIME                        
+0007.70      A                                  4  3'Type option, press Enter.' 
+0007.80      A                                  6  5'1=Approve'                 
+0007.90      A                                  6 21'2=Deny'                    
+0008.00      A                                  6 37'5=Description'
+0008.10      A                                  8  4'opt'          
+0008.20      A                                  8 11'ID'           
+0008.30      A                                  8 20'Name'         
+0008.40      A                                  8 35'Worked Date'  
+0008.50      A                                  8 58'Day Type'     
+0008.60      A                                  8 73'Status'       

@@ -1,0 +1,4 @@
+0001.00 A               R MNGREC            
+0002.00 A                 MNGRID        10A 
+0003.00 A                 PASSWORD       8A 
+0004.00 A               K MNGRID            

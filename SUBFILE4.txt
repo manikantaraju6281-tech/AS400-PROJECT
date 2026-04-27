@@ -1,0 +1,115 @@
+0000.10      A*%%TS  SD  20260425  175213  MANI0011    REL-V7R5M0  5770-WDS 
+0000.20      A*%%EC                                                         
+0000.30      A                                      DSPSIZ(24 80 *DS3)      
+0000.40      A          R SFLRCD                    SFL                     
+0000.50      A*%%TS  SD  20260425  175213  MANI0011    REL-V7R5M0  5770-WDS 
+0000.60      A            $OPT1          1S 0B  9  4DSPATR(HI)              
+0000.70      A            $EMPID         5S 0B  9 12DSPATR(HI)              
+0000.80      A            $EMPNAME      10A  B  9 20DSPATR(HI)              
+0000.90      A            $FROMDATE      8Y 0B  9 31DSPATR(HI)              
+0001.00      A                                      EDTWRD('  /  /    ')    
+0001.10      A            $TODATE        8Y 0B  9 47DSPATR(HI)              
+0001.20      A                                      EDTWRD('  /  /    ')    
+0001.30      A            $TOTALDAYS     2S 0B  9 59DSPATR(HI)              
+0001.40      A            $STATUS        1A  B  9 74DSPATR(HI)              
+0001.50      A          R SFLCTL                    SFLCTL(SFLRCD)          
+0001.60      A*%%TS  SD  20260424  080244  MANI0011    REL-V7R5M0  5770-WDS 
+0001.70      A                                      SFLSIZ(9999)      
+0001.80      A                                      SFLPAG(0010)      
+0001.90      A                                      TEXT('Y')         
+0002.00      A                                      CF03(03 'EXIT')   
+0002.10      A                                      CF05(05 'REFRESH')
+0002.20      A                                      CF12(12 'CANCEL') 
+0002.30      A                                      OVERLAY           
+0002.40      A  25                                  SFLDSP            
+0002.50      A  26                                  SFLDSPCTL         
+0001.70      A                                      SFLSIZ(9999)      
+0001.80      A                                      SFLPAG(0010)      
+0001.90      A                                      TEXT('Y')         
+0002.00      A                                      CF03(03 'EXIT')   
+0002.10      A                                      CF05(05 'REFRESH')
+0002.20      A                                      CF12(12 'CANCEL') 
+0002.30      A                                      OVERLAY           
+0002.40      A  25                                  SFLDSP            
+0002.50      A  26                                  SFLDSPCTL         0002.60      A  27                                  SFLCLR                      
+0002.70      A  28                                  SFLEND(*MORE)               
+0002.80      A                                  1  3'USER: MANAGER'             
+0002.90      A                                  1 25'EMPLOYEE LEAVE MANAGEMENT  
+0003.00      A                                      DSPATR(HI)                  
+0003.10      A                                  2 31'APPROVE/DENY LEAVES'       
+0003.20      A                                      DSPATR(HI)                  
+0003.30      A                                  1 73DATE                        
+0003.40      A                                      EDTCDE(Y)                   
+0003.50      A                                  2 73TIME                       
+0003.60      A                                  4  3'Type option, press Enter.'
+0003.70      A                                  6  5'1=Approve'                
+0003.80      A                                      COLOR(BLU)                 
+0003.90      A                                  6 23'2=Deny'                   
+0004.00      A                                      COLOR(BLU)                 
+0004.10      A                                  6 40'5=Description'            
+0004.20      A                                      COLOR(BLU)                 
+0004.30      A                                  8  4'opt'                      
+0004.40      A                                  8 12'Id'                     
+0004.50      A                                  8 20'Name'                   
+0004.60      A                                  8 31'from Date'              
+0004.70      A                                  8 47'To Date'                
+0004.80      A                                  8 59'Total Days'             
+0004.90      A                                  8 74'Status'                 
+0005.00      A          R FOOTER                                             
+0005.10      A*%%TS  SD  20260405  182345  MANI0011    REL-V7R5M0  5770-WDS  
+0005.20      A                                      OVERLAY                  
+0005.30      A                                 23  5'F3=EXIT'               
+0005.40      A                                 23 20'F5=REFRESH'            
+0005.50      A                                 23 40'F12=CANCEL'            
+0005.60      A          R LEAVEDESC                                         
+0005.70      A*%%TS  SD  20260425  175213  MANI0011    REL-V7R5M0  5770-WDS 
+0005.80      A                                      CF03(03 'EXIT')         
+0005.90      A                                      CF05(05 'REFRESH')      
+0006.00      A                                      CF12(12 'CANCEL')       
+0006.10      A                                  1  3'USER: MANAGER'         
+0006.20      A                                  1 25'EMPLOYEE LEAVE MANAGEMENT  
+0006.30      A                                      DSPATR(HI)                  
+0006.40      A                                  2 32'LEAVE DESCRIPTION'         
+0006.50      A                                      DSPATR(HI)                  
+0006.60      A                                  1 73DATE                        
+0006.70      A                                      EDTCDE(Y)                   
+0006.80      A                                  2 73TIME                        
+0006.90      A                                  5  3'Select one of the followin 
+0007.00      A                                  7  6'1=Approve'                 
+0007.10      A                                      COLOR(BLU)        
+0007.20      A                                  7 24'2=Deny'          
+0007.30      A                                      COLOR(BLU)        
+0007.40      A                                  9  3'Employee Id -'   
+0007.50      A            $EMPID1        5S 0B  9 18DSPATR(HI)        
+0007.60      A                                 11  3'Employee Name -' 
+0007.70      A            $EMPNAME1     10A  B 11 20DSPATR(HI)        
+0007.80      A                                 13  3'From Date -'     
+0007.90      A            $FROMDATE1     8Y 0B 13 16DSPATR(HI)        
+0008.00      A                                      EDTWRD('  /  /    ')
+0008.10      A                                 15  3'From Date Type -'  
+0008.20      A            $FRDTYPE1      2A  B 15 21DSPATR(HI)          
+0008.30      A                                 17  3'To Date -'         
+0008.40      A            $TODATE1       8Y 0B 17 14DSPATR(HI)          
+0008.50      A                                      EDTWRD('  /  /    ')
+0008.60      A                                  9 41'To Date Type -'    
+0008.70      A            $TDTYPE1       2A  B  9 57DSPATR(HI)          
+0008.80      A                                 11 41'Total Days -'      
+0008.90      A            $TOTDAYS1      2S 0B 11 55DSPATR(HI)       
+0009.00      A                                 13 41'Status -'       
+0009.10      A            $STATUS1       1A  B 13 51DSPATR(HI)       
+0009.20      A                                 15 41'Leave Type -'   
+0009.30      A            $LTYPE1        2A  B 15 55DSPATR(HI)       
+0009.40      A                                 17 41'Leave Balance -'
+0009.50      A                                 20  3'Reason -'       
+0009.60      A            $REASON1      50A  B 20 13DSPATR(HI)       
+0009.70      A                                 23  5'F3=EXIT'        
+0009.80      A                                      COLOR(BLU)            
+0009.90      A                                 23 20'F5=REFRESH'          
+0010.00      A                                      COLOR(BLU)            
+0010.10      A                                 22  3'Selection ===>'      
+0010.20      A            $OPT1          1S 0B 22 19DSPATR(HI)            
+0010.30      A                                 23 39'F12=CANCEL'          
+0010.40      A                                      COLOR(BLU)            
+0010.50      A            $BALANCE1     10Y 2B 17 58EDTWRD('        .  ') 
+0010.60      A                                      DSPATR(HI)            
+0010.70      A            MSG           30A  O 24  4    

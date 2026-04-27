@@ -1,0 +1,185 @@
+0000.10      A*%%TS  SD  20260425  174909  MANI0011    REL-V7R5M0  5770-WDS 
+0000.20      A*%%EC                                                         
+0000.30      A                                      DSPSIZ(24 80 *DS3)      
+0000.40      A          R SFLRCD                    SFL                     
+0000.50      A*%%TS  SD  20260401  040027  MANI0011    REL-V7R5M0  5770-WDS 
+0000.60      A            $OPT           1S 0B  9  5DSPATR(HI)              
+0000.70      A            $EMPNAME      10A  B  9 30DSPATR(HI)              
+0000.80      A            $CITY         10A  B  9 49DSPATR(HI)              
+0000.90      A            $ROLE          8A  B  9 69DSPATR(HI)              
+0001.00      A            $EMPID         5S 0O  9 18DSPATR(HI)              
+0001.10      A          R SFLCTL                    SFLCTL(SFLRCD)          
+0001.20      A*%%TS  SD  20260331  162237  MANI0011    REL-V7R5M0  5770-WDS 
+0001.30      A                                      CF03(03 'EXIT')         
+0001.40      A                                      CF12(12 'CANCEL')       
+0001.50      A                                      CF06(06 'ADD')          
+0001.60      A                                      CF10(10 'VIEW HOLIDAY') 
+0001.70      A                                      OVERLAY                     
+0001.80      A  25                                  SFLDSP                      
+0001.90      A  26                                  SFLDSPCTL                   
+0002.00      A  27                                  SFLCLR                      
+0002.10      A  28                                  SFLEND(*MORE)               
+0002.20      A                                      SFLSIZ(9999)                
+0002.30      A                                      SFLPAG(0001)                
+0002.40      A                                  1  2'USER: ADMIN'               
+0002.50      A                                  1 25'EMPLOYEE LEAVE MANAGEMENT  
+0002.60      A                                      DSPATR(HI)                  
+0002.70      A                                  2 33'ADMIN DASHBOARD'           
+0002.80      A                                      DSPATR(HI)                  
+0002.90      A                                  5  4'Type Option, press Enter'  
+0003.00      A                                  6  7'2=Update'                  
+0003.10      A                                      COLOR(BLU)                  
+0003.20      A                                  6 22'4=Delete'                  
+0003.30      A                                      COLOR(BLU)                  
+0003.40      A                                  6 39'5=Display'                 
+0003.50      A                                      COLOR(BLU)
+0003.60      A                                  8  5'Opt'     
+0003.70      A                                  8 18'ID'      
+0003.80      A                                  8 30'NAME'    
+0003.90      A                                  8 49'CITY'    
+0004.00      A                                  1 70DATE      
+0004.10      A                                      EDTCDE(Y) 
+0004.20      A                                  2 70TIME      
+0004.30      A            PGMNAME       10A  O  2  2          
+0004.40      A                                  8 69'ROLE'                 
+0004.50      A                                  4 54'POSITION TO:'         
+0004.60      A            $POS           5S 0B  4 68DSPATR(HI)             
+0004.70      A          R FOOTER                                           
+0004.80      A*%%TS  SD  20260331  162237  MANI0011    REL-V7R5M0  5770-WDS
+0004.90      A                                      CF03(03 'EXIT')        
+0005.00      A                                      CF12(12 'CANCEL')      
+0005.10      A                                      CF06(06 'ADD')         
+0005.20      A                                      OVERLAY                
+0005.30      A                                 23  3'F3=EXIT'               
+0005.40      A                                 23 19'F12=CANCEL'            
+0005.50      A                                 23 39'F6=ADD'                
+0005.60      A                                 23 51'F7=VIEW HOLIDAY'       
+0005.70      A          R ADD                                               
+0005.80      A*%%TS  SD  20260330  115338  MANI0011    REL-V7R5M0  5770-WDS 
+0005.90      A                                      CF03(03 'EXIT')         
+0006.00      A                                      CF12(12 'CANCEL')       
+0006.10      A                                      CF05(05 'REFRESH')      
+0006.20      A                                  1  2USER               
+0006.30      A            $PGMNAME      10A  O  2  2                   
+0006.40      A                                  1 32'ADD EMPLOYEE DATA'
+0006.50      A                                      DSPATR(HI)         
+0006.60      A                                  1 69DATE               
+0006.70      A                                      EDTCDE(Y)          
+0006.80      A                                  2 69TIME               
+0006.90      A                                  7 24'ID      :'        
+0007.00      A            $EMPID1        5S 0B  7 39                   
+0007.10      A                                  9 24'NAME    :' 
+0007.20      A            $EMPNAME1     10A  B  9 39            
+0007.30      A                                 11 24'CITY    :' 
+0007.40      A            $CITY1        10A  B 11 39            
+0007.50      A                                 13 24'ROLE    :' 
+0007.60      A            $ROLE1         1A  B 13 39            
+0007.70      A                                 23  5'F3=EXIT'   
+0007.80      A                                 23 22'F12=CANCEL'
+0007.90      A                                 23 42'F5=REFRESH'
+0008.00      A            $MSG1         30   O 24  3                       
+0008.10      A          R UPDATE                                           
+0008.20      A*%%TS  SD  20260331  042315  MANI0011    REL-V7R5M0  5770-WDS
+0008.30      A                                      CF03(03 'EXIT')        
+0008.40      A                                      CF12(12 'CANCEL')      
+0008.50      A                                      CF05(05 'REFRESH')     
+0008.60      A                                  1  2USER                   
+0008.70      A            $PGMNAME      10A  O  2  2                       
+0008.80      A                                  1 69DATE                   
+0008.90      A                                      EDTCDE(Y)   
+0009.00      A                                  2 69TIME        
+0009.10      A            $EMPID2        5S 0B  7 39DSPATR(HI)  
+0009.20      A            $EMPNAME2     10A  B  9 39DSPATR(HI)  
+0009.30      A            $CITY2        10A  B 11 39DSPATR(HI)  
+0009.40      A            $ROLE2         1A  B 13 39DSPATR(HI)  
+0009.50      A                                 23  5'F3=EXIT'   
+0009.60      A                                      COLOR(BLU)  
+0009.70      A                                 23 22'F12=CANCEL'
+0009.80      A                                      COLOR(BLU)            
+0009.90      A                                 23 42'F5=REFRESH'          
+0010.00      A                                      COLOR(BLU)            
+0010.10      A                                  1 31'UPDATE EMPLOYEE DATA'
+0010.20      A                                      DSPATR(HI)            
+0010.30      A            $MSG2         20A  O 24  3                      
+0010.40      A                                 11 24'CITY   :'            
+0010.50      A                                 13 24'ROLE   :'            
+0010.60      A                                  7 24'ID     :'            
+0010.70      A                                  9 24'NAME   :'               
+0010.80      A          R DISPLAY                                            
+0010.90      A*%%TS  SD  20260425  174909  MANI0011    REL-V7R5M0  5770-WDS  
+0011.00      A                                      CF03(03 'EXIT')          
+0011.10      A                                      CF12(12 'CANCEL')        
+0011.20      A                                  1  2USER                     
+0011.30      A            $PGMNAME      10A  O  2  2                         
+0011.40      A                                  1 69DATE                     
+0011.50      A                                      EDTCDE(Y)                
+0011.60      A                                  2 69TIME                   
+0011.70      A                                 23  5'F3=EXIT'              
+0011.80      A                                 23 22'F12=CANCEL'           
+0011.90      A                                  1 30'DISPLAY EMPLOYEE DATA'
+0012.00      A                                      DSPATR(HI)             
+0012.10      A                                  5  5'Employee ID :'        
+0012.20      A            $EMPID3        5S 0B  5 22                       
+0012.30      A                                  7  5'Name        :'        
+0012.40      A            $EMPNAME3     10A  O  7 22                       
+0012.50      A                                  9  5'Gender      :'   
+0012.60      A            $GENDER3       1A  B  9 22                  
+0012.70      A                                  5 38'DOB  :'          
+0012.80      A                                  5 63'DOJ :'           
+0012.90      A                                  7 35'Mobile No:'      
+0013.00      A            $MOBNO3       10S 0B  7 47                  
+0013.10      A                                  9 35'Alt No   :'      
+0013.20      A            $ALTNO3       10S 0B  9 47                  
+0013.30      A                                 11  4'Address      :'  
+0013.40      A            $ADD3         10A  B 11 22                 
+0013.50      A                                 13  4'Country      :' 
+0013.60      A            $CON3         10A  B 13 22                 
+0013.70      A                                  7 63'Team:'          
+0013.80      A            $TEAM3         5A  B  7 70                 
+0013.90      A                                 15  4'Pin Code     :' 
+0014.00      A            $PINCODE3      6S 0B 15 22                 
+0014.10      A                                 11 35'ProjectId:'     
+0014.20      A            $PRJCTID3      3S 0B 11 47                 
+0014.30      A                                 13 35'ManagerId:'      
+0014.40      A            $MGRID3        4S 0B 13 47                  
+0014.50      A                                 15 35'Designation :'   
+0014.60      A            $DESIG3       10A  B 15 50                  
+0014.70      A                                 17  4'City         :'  
+0014.80      A            $CITY3        10A  B 17 22                  
+0014.90      A                                 19  4'Email Office :'  
+0015.00      A            $EMAILO3      20A  B 19 22                  
+0015.10      A                                 19 47'Email Personal:' 
+0015.20      A            $EMAILP3      17A  B 19 64                       
+0015.30      A                                 21  4'Employee Status :'    
+0015.40      A                                 21 45'Role :'               
+0015.50      A            $ROLE3         1A  B 21 53                       
+0015.60      A            $DOB3          8Y 0B  5 47EDTWRD('  /  /    ')   
+0015.70      A            $DOJ3          8Y 0B  5 70EDTWRD('  /  /    ')   
+0015.80      A            $EMPSTA3       1A  B 21 22                       
+0015.90      A          R HOLIDAYS                                         
+0016.00      A*%%TS  SD  20260425  174909  MANI0011    REL-V7R5M0  5770-WDS
+0016.10      A                                      CF03(03 'EXIT')            
+0016.20      A                                      CF05(05 'REFRESH')         
+0016.30      A                                      CF12(12 'CANCEL')          
+0016.40      A                                  1  3'USER: ADMIN'              
+0016.50      A                                  1 25'Employee Leave Management 
+0016.60      A                                      DSPATR(HI)                 
+0016.70      A                                  1 70DATE                       
+0016.80      A                                      EDTCDE(Y)                  
+0016.90      A                                  2 70TIME                       
+0017.00      A                                  2 34'View Holidays'     
+0017.10      A                                      DSPATR(HI)          
+0017.20      A                                  7 10'Date    :'         
+0017.30      A            $DATE1         8Y 0B  7 23DSPATR(HI)          
+0017.40      A                                      EDTWRD('  /  /    ')
+0017.50      A                                 10 10'Day     :'         
+0017.60      A            $DAY1          9A  B 10 23DSPATR(HI)          
+0017.70      A                                 13 10'Remarks :'         
+0017.80      A            $REMARKS1     20A  B 13 23DSPATR(HI)          
+0017.90      A                                 23  5'F3=EXIT'    
+0018.00      A                                      COLOR(BLU)   
+0018.10      A                                 23 22'F5=REFRESH' 
+0018.20      A                                      COLOR(BLU)   
+0018.30      A                                 23 42'F12=REFRESH'
+0018.40      A                                      COLOR(BLU)                                                                                  
+

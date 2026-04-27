@@ -1,0 +1,38 @@
+0000.10      A*%%TS  SD  20260425  175528  MANI0011    REL-V7R5M0  5770-WDS
+0000.20      A*%%EC                                                        
+0000.30      A                                      DSPSIZ(24 80 *DS3)     
+0000.40      A          R SFLRCD                    SFL                    
+0000.50      A*%%TS  SD  20260425  175528  MANI0011    REL-V7R5M0  5770-WDS
+0000.60      A            $DATE          8Y 0B  8  6DSPATR(HI)             
+0000.70      A                                      EDTWRD('  /  /    ')   
+0000.80      A            $DAY          10A  B  8 30DSPATR(HI)             
+0000.90      A            $REMARKS      20A  B  8 53DSPATR(HI)             
+0001.00      A          R SFLCTL                    SFLCTL(SFLRCD)         
+0001.10      A*%%TS  SD  20260409  182350  MANI0011    REL-V7R5M0  5770-WDS
+0001.20      A                                      CF03(03 'EXIT')        
+0001.30      A                                      CF05(05 'REFRESH')     
+0001.40      A                                      CF12(12 'CANCEL')      
+0001.50      A                                      OVERLAY                
+0001.60      A  25                                  SFLDSP                 
+0001.70      A  26                                  SFLDSPCTL                   
+0001.80      A  27                                  SFLCLR                      
+0001.90      A  28                                  SFLEND(*MORE)               
+0002.00      A                                      SFLSIZ(9999)                
+0002.10      A                                      SFLPAG(0003)                
+0002.20      A                                  1  3'USER: MANAGER'             
+0002.30      A                                  1 25'EMPLOYEE LEAVE MANAGEMENT  
+0002.40      A                                      DSPATR(HI)                  
+0002.50      A                                  2 34'VIEW HOLIDAYS'             
+0002.60      A                                      DSPATR(HI)             
+0002.70      A                                  1 72DATE                   
+0002.80      A                                      EDTCDE(Y)              
+0002.90      A                                  2 72TIME                   
+0003.00      A                                  7  6'DATE'                 
+0003.10      A                                  7 30'DAY'                  
+0003.20      A                                  7 53'REMARKS'              
+0003.30      A          R FOOTER                                           
+0003.40      A*%%TS  SD  20260409  173524  MANI0011    REL-V7R5M0  5770-WDS
+0003.50      A                                      OVERLAY       
+0003.60      A                                 23  6'F3=EXIT'     
+0003.70      A                                 23 23'F5=REFRESH'  
+0003.80      A                                 23 44'F12=CANCEL'  

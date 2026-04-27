@@ -1,0 +1,29 @@
+0000.10      A*%%TS  SD  20260425  174249  MANI0011    REL-V7R5M0  5770-WDS     
+0000.20      A*%%EC                                                             
+0000.30      A                                      DSPSIZ(24 80 *DS3)          
+0000.40      A          R SCR6                                                  
+0000.50      A*%%TS  SD  20260425  174249  MANI0011    REL-V7R5M0  5770-WDS     
+0000.60      A                                      CF03(03 'EXIT')             
+0000.70      A                                      CF05(05 'REFRESH')          
+0000.80      A                                      CF12(12 'CANCEL')           
+0000.90      A                                  1  3'USER: EMPLOYEE'            
+0001.00      A                                  1 25'EMPLOYEE LEAVE MANAGEMENT  
+0001.10      A                                      DSPATR(HI)                  
+0001.20      A                                  2 34'APPLY COMP OFF'            
+0001.30      A                                      DSPATR(HI)                  
+0001.40      A                                  1 72DATE                        
+0001.50      A                                      EDTCDE(Y)                   
+0001.60      A                                  2 72TIME                        
+0001.70      A                                  7  5'WORKED DATE   :'      
+0001.80      A            $WRKDATE       8Y 0B  7 23DSPATR(HI)             
+0001.90      A                                      EDTWRD('  /  /    ')   
+0002.00      A                                  9  5'SELECT NO. OF DAYS  :'
+0002.10      A            $NOOFDAYS      2S 0B  9 30DSPATR(HI)             
+0002.20      A                                 11  5'REASON  :'            
+0002.30      A            $REASON       20A  B 11 17DSPATR(HI)             
+0002.40      A                                 13  5'PROJECT ID   :'       
+0002.50      A            $PRJCTID       5S 0B 13 23DSPATR(HI)             
+0002.60      A                                 23  5'F3=EXIT'     
+0002.70      A                                 23 26'F5=REFRESH'  
+0002.80      A                                 23 49'F12=CANCEL'  
+0002.90      A            $MSG          30A  O 24  3              

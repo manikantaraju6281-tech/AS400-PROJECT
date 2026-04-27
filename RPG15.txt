@@ -1,0 +1,59 @@
+0001.00 FSCREEN10  CF   E             WORKSTN               
+0002.00 FLEAVES    UF A E           K DISK                  
+0002.01 FEMPMASTER UF A E           K DISK                  
+0002.02 DMSG              S             50A                 
+0002.03 C                   EVAL      EMPID=101             
+0003.00 C                   DOW       *IN03=*OFF            
+0003.01 C                   EXFMT     SCR10                 
+0004.00 C                   EVAL      MSG=*BLANKS           
+0006.00 C                   IF        *IN03=*ON             
+0007.00 C                   LEAVE                           
+0008.00 C                   ENDIF                           
+0009.00 C                   IF        $FROMDATE=0           
+0010.00 C                   EVAL      MSG='ENTER FROM DATE' 
+0011.00 C                   ITER                            
+0012.00 C                   ENDIF                           
+0013.00 C                   IF        $TODATE=0             
+0014.00 C                   EVAL      MSG='ENTER TO DATE'   
+0014.01 C                   EXFMT     SCR10                 
+0015.00 C                   ITER                            
+0016.00 C                   ENDIF                           
+0017.00 C                   IF        $TODATE<$FROMDATE     
+0018.00 C                   EVAL      MSG='TO DATE INVALID' 
+0018.01 C                   EXFMT     SCR10                 
+0019.00 C                   ITER                            
+0020.00 C                   ENDIF                           
+0021.00 C                   IF        $FDAYTYPE<>'F' AND $FDAYTYPE<>'H'
+0022.00 C                   EVAL      MSG='TYPE F/H'                   
+0022.01 C                   EXFMT     SCR10                            
+0023.00 C                   ITER                                       
+0024.00 C                   ENDIF                                      
+0025.00 C                   IF        $REASON=*BLANKS                  
+0026.00 C                   EVAL      MSG='ENTER REASON'               
+0026.01 C                   EXFMT     SCR10                            
+0027.00 C                   ITER                                       
+0028.00 C                   ENDIF                                 
+0028.01 C                   EVAL      TOTALDAY=$TODATE-$FROMDATE+1
+0029.00 C     EMPID         CHAIN     EMPMASTER                   
+0030.00 C                   IF        NOT %FOUND(EMPMASTER)       
+0031.00 C                   EVAL      MSG='EMP NOT FOUND'         
+0031.01 C                   EXFMT     SCR10                       
+0032.00 C                   ITER                                  
+0033.00 C                   ENDIF                                 
+0034.00 C                   IF        BALANCE<TOTALDAY            
+0035.00 C                   EVAL      MSG='INSUFFICIENT BALANCE'
+0035.01 C                   EXFMT     SCR10                     
+0036.00 C                   ITER                                
+0037.00 C                   ENDIF                               
+0038.00 C                   EVAL      FROMDATE=$FROMDATE        
+0039.00 C                   EVAL      TODATE=$TODATE            
+0040.00 C                   EVAL      FROMDAYTYP=$FDAYTYPE      
+0041.00 C                   EVAL      TODAYTYPE=$TDAYTYPE       
+0042.00 C                   EVAL      REASON=$REASON            
+0043.00 C                   WRITE     PFREC                   
+0044.00 C                   EVAL      BALANCE=BALANCE-TOTALDAY
+0045.00 C                   UPDATE    EMPREC                  
+0046.00 C                   EVAL      MSG='LEAVE APPLIED'     
+0047.00 C                   EXFMT     SCR10                   
+0048.00 C                   ENDDO                             
+0049.00 C                   EVAL      *INLR=*ON               

@@ -1,0 +1,11 @@
+0001.00 A               R PFREC                
+0002.00 A                 EMPID          5S 0  
+0003.00 A                 FROMDATE       8S 0  
+0004.00 A                 FROMDAYTYP     2A    
+0005.00 A                 TODATE         8S 0  
+0006.00 A                 TODAYTYPE      2A    
+0007.00 A                 TOTALDAY      10S 0  
+0008.00 A                 REASON       100A    
+0009.00 A                 STATUS         1A    
+0010.00 A                 LEAVETYPE      2A    
+0011.00 A               K EMPID                

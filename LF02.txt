@@ -1,0 +1,5 @@
+0001.00 A               R LFREC1                    PFILE(HOLIDAYS)           
+0002.00 A                 DATE           8S 0       TEXT('DATE FOR HOLIDAY')  
+0003.00 A                 DAY           10A         TEXT('DAY OF HOLIDAY')    
+0004.00 A                 REMARKS       20A         TEXT('REASON FOR HOLIDAY')
+0005.00 A               K DATE                                                

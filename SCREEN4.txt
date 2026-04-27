@@ -1,0 +1,26 @@
+0000.10      A*%%TS  SD  20260418  130638  MANI0011    REL-V7R5M0  5770-WDS     
+0000.20      A*%%EC                                                             
+0000.30      A                                      DSPSIZ(24 80 *DS3)          
+0000.40      A          R SCR4                                                  
+0000.50      A*%%TS  SD  20260418  130053  MANI0011    REL-V7R5M0  5770-WDS     
+0000.60      A                                      CF03(03 'EXIT')             
+0000.70      A                                      CF12(12 'CANCEL')           
+0000.80      A                                  1  3'USER: MANAGER'             
+0000.90      A                                  1 25'EMPLOYEE LEAVE MANAGEMENT  
+0001.00      A                                      DSPATR(HI)                  
+0001.10      A                                  2 33'CHANGE PASSWORD'           
+0001.20      A                                      DSPATR(HI)                  
+0001.30      A                                  1 72DATE                        
+0001.40      A                                      EDTCDE(Y)                   
+0001.50      A                                  2 72TIME                        
+0001.60      A                                  6 10'USER  :'                   
+0001.70      A            $USERNAME     10A  B  6 19DSPATR(HI)            
+0001.80      A                                  8 10'CURRENT PASSWORD  :' 
+0001.90      A            $CURPWD       30A  B  8 31DSPATR(HI)            
+0002.00      A                                 10 10'NEW PASSWORD  :'     
+0002.10      A            $NEWPWD       30A  B 10 27DSPATR(HI)            
+0002.20      A                                 12 10'VERIFY PASSWORD  :'  
+0002.30      A            $VERPWD       30A  B 12 31DSPATR(HI)            
+0002.40      A                                 23  6'F3=EXIT'             
+0002.50      A                                 23 21'F12=CANCEL'          
+0002.60      A            $MSG          40A  O 24  4 

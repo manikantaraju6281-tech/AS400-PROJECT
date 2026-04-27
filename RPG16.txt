@@ -1,0 +1,62 @@
+0001.00 FSUBF8     CF   E             WORKSTN SFILE(SFLRCD:RRN)   
+0002.00 FLEAVES    UF A E           K DISK                        
+0002.01 DRRN              S              4S 0                     
+0003.00 C                   exsr      clear                       
+0004.00 C                   exsr      load                        
+0005.00 C                   exsr      dsply                       
+0006.00 C                   eval      *inlr=*on                   
+0007.00 C*CLEAR SUBROUTINE                                        
+0007.01 C     clear         begsr                                 
+0008.00 C                   eval      RRN=0                       
+0009.00 C                   eval      *in27=*on                   
+0010.00 C                   write     sflctl                      
+0011.00 C                   eval      *in27=*off                  
+0012.00 C                   endsr                                 
+0013.00 C*LOAD SUBROUTINE                                         
+0014.00 C     load          begsr                                 
+0015.00 C     *LOVAL        SETLL     LEAVES              
+0016.00 C                   read      LEAVES              
+0017.00 C                   dow       not %eof(LEAVES)    
+0017.01 C                   EVAL      RRN=RRN+1           
+0018.00 C                   eval      $FROMDATE=FROMDATE  
+0019.00 C                   eval      $TODATE=TODATE      
+0020.00 C                   eval      $TOTALDAYS=TOTALDAY 
+0021.00 C                   eval      $STATUS=STATUS      
+0022.00 C                   eval      $LEAVETYPE=LEAVETYPE
+0024.00 C                   WRITE     SFLRCD      
+0024.01 C                   READ      LEAVES      
+0027.00 C                   enddo                 
+0028.00 C                   endsr                 
+0029.00 C*DSPLY SUBROUTINE                        
+0030.00 C     dsply         begsr                 
+0030.01 C                   DOW       *IN03=*OFF  
+0031.00 C                   eval      *in26=*on   
+0032.00 C                   if        RRN>0       
+0033.00 C                   eval      *in25=*on      
+0034.00 C                   else                     
+0035.00 C                   eval      *in25=*off     
+0036.00 C                   endif                    
+0037.00 C                   write     FOOTER         
+0038.00 C                   EXFMT     SFLCTL         
+0038.01 C                   READC     SFLRCD         
+0038.02 C                   DOW       NOT %EOF(SUBF8)
+0038.03 C                   IF        $OPT=1         
+0038.04 C     EMPID         SETLL     LEAVES            
+0038.05 C     EMPID         READE     LEAVES            
+0038.06 C                   DOW       NOT %EOF          
+0038.07 C                   IF        FROMDATE=$FROMDATE
+0038.08 C                   IF        STATUS='P'        
+0038.09 C                   EVAL      STATUS='C'        
+0038.10 C                   UPDATE    PFREC             
+0038.11 C                   ENDIF                       
+0038.12 C                   LEAVE                       
+0038.13 C                   ENDIF              
+0039.00 C     EMPID         READE     LEAVES   
+0040.00 C                   ENDDO              
+0041.00 C                   ENDIF              
+0042.00 C                   READC     SFLRCD   
+0043.00 C                   ENDDO              
+0044.00 C                   exsr      clear    
+0045.00 C                   exsr      load     
+0046.00 C                   ENDDO              
+0047.00 C                   ENDSR      

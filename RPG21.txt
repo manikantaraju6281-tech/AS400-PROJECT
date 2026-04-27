@@ -1,0 +1,21 @@
+0001.00 FSCREEN8   CF   E             WORKSTN               
+0002.00 FLEAVEBAL  IF   E           K DISK                  
+0003.00 C                   dow       *in03=*off            
+0003.01 C                   EVAL      EMPID=101             
+0004.00 C     EMPID         CHAIN     LEAVEBAL              
+0005.00 C                   IF        %FOUND(LEAVEBAL)      
+0006.00 C                   EVAL      $CASLEAVES=CASLEAVES  
+0007.00 C                   EVAL      $EARLEAVES=EARLEAVES  
+0008.00 C                   EVAL      $COMLEAVES=COMLEAVES  
+0009.00 C                   endif                           
+0010.00 C                   exfmt     SCR8                  
+0010.01 C                   if        *in12=*on             
+0010.02 C                   LEAVE                           
+0010.03 C                   endif                           
+0010.04 C                   if        *in05=*on             
+0010.05 C                   eval      $CASLEAVES=CASLEAVES  
+0010.06 C                   eval      $EARLEAVES=EARLEAVES
+0010.07 C                   eval      $COMLEAVES=COMLEAVES
+0010.08 C                   endif                         
+0011.00 C                   enddo                         
+0012.00 C                   EVAL      *inlr=*on           

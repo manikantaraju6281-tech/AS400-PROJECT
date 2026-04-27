@@ -1,0 +1,15 @@
+0001.00 FSCREEN9   CF   E             WORKSTN              
+0001.01 FLEAVES    IF   E           K DISK                 
+0003.00 C                   DOW       *IN03=*OFF           
+0003.01 C                   EVAL      EMPID=101            
+0004.00 C     EMPID         CHAIN     LEAVES               
+0005.00 C                   IF        %FOUND(LEAVES)       
+0006.00 C                   EVAL      $FROMDATE=FROMDATE   
+0007.00 C                   EVAL      $TODATE=TODATE       
+0008.00 C                   EVAL      $FDAYTYPE=FROMDAYTYP 
+0009.00 C                   EVAL      $TDAYTYPE=TODAYTYPE  
+0010.00 C                   EVAL      $REASON=REASON       
+0010.01 C                   ENDIF                          
+0011.00 C                   EXFMT     SCR9                 
+0012.00 C                   ENDDO                          
+0013.00 C                   EVAL      *INLR=*ON            

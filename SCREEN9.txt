@@ -1,0 +1,31 @@
+0000.10      A*%%TS  SD  20260425  173705  MANI0011    REL-V7R5M0  5770-WDS    
+0000.20      A*%%EC                                                            
+0000.30      A                                      DSPSIZ(24 80 *DS3)         
+0000.40      A          R SCR9                                                 
+0000.50      A*%%TS  SD  20260425  173705  MANI0011    REL-V7R5M0  5770-WDS    
+0000.60      A                                      CF03(03 'EXIT')            
+0000.70      A                                      CF05(05 'REFRESH')         
+0000.80      A                                      CF12(12 'CANCEL')          
+0000.90      A                                  1  3'USER: EMPLOYEE'           
+0001.00      A                                  1 25'EMPLOYEE LEAVE MANAGEMENT 
+0001.10      A                                      DSPATR(HI)                 
+0001.20      A                                  2 34'APPLY COMP OFF'           
+0001.30      A                                      DSPATR(HI)                 
+0001.40      A                                  1 72DATE                       
+0001.50      A                                      EDTCDE(Y)                  
+0001.60      A                                  2 72TIME                       
+0001.70      A                                 23  5'F3=EXIT'            
+0001.80      A                                 23 26'F5=REFRESH'         
+0001.90      A                                 23 49'F12=CANCEL'         
+0002.00      A            $MSG          30A  O 24  3                     
+0002.10      A                                  7  3'From Date :'        
+0002.20      A            $FROMDATE      8Y 0B  7 16DSPATR(HI)           
+0002.30      A                                      EDTWRD('  /  /    ') 
+0002.40      A                                  7 39'From Day Type :'    
+0002.50      A            $FDAYTYPE      1A  B  7 56DSPATR(HI)           
+0002.60      A                                 10  3'To Date :'     
+0002.70      A            $TODATE        8S 0B 10 14DSPATR(HI)      
+0002.80      A                                 10 39'To Day Type :' 
+0002.90      A            $TDAYTYPE      1A  B 10 54DSPATR(HI)      
+0003.00      A                                 13  3'Reason :'      
+0003.10      A            $REASON       30A  B 13 13DSPATR(HI)                                                                               

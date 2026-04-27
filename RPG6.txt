@@ -1,0 +1,28 @@
+0001.00 FMNGRLOGIN IF   E           K DISK                       
+0002.00 FSCREEN3   CF   E             WORKSTN                    
+0003.00 DMSG              S             30A                      
+0004.00 C                   dow       *in03=*off                 
+0004.01 C                   exfmt     SCR3                       
+0004.02 C                   eval      MNGRID=$MNGRID             
+0005.00 C     MNGRID        CHAIN     MNGRLOGIN                  
+0006.00 C                   if        %found(MNGRLOGIN)          
+0007.00 C                   if        PASSWORD=$PASSWORD         
+0007.01 C                   CALL      'RPG7'                     
+0008.00 C                   eval      MSG='LOGIN SUCCESS'        
+0009.00 C                   else                                 
+0010.00 C                   eval      MSG='INVALID CREDENTIALS'  
+0011.00 C                   endif                                
+0011.01 C                   else                                 
+0011.02 C                   eval      MSG='INVALID CREDENTIALS'  
+0011.03 C                   endif                       
+0012.00 C*F12 KEY                                       
+0013.00 C                   if        *in12=*on         
+0014.00 C                   leave                       
+0015.00 C                   endif                       
+0016.00 C*F5 KEY                                        
+0017.00 C                   if        *in05=*on         
+0018.00 C                   eval      $MNGRID=*blanks   
+0019.00 C                   eval      $PASSWORD=*blanks 
+0020.00 C                   endif                
+0021.00 C                   enddo                
+0022.00 C                   EVAL      *INLR=*ON  

@@ -1,0 +1,29 @@
+0000.10      A*%%TS  SD  20260425  050258  MANI0011    REL-V7R5M0  5770-WDS     
+0000.20      A*%%EC                                                             
+0000.30      A                                      DSPSIZ(24 80 *DS3)          
+0000.40      A          R SCR5                                                  
+0000.50      A*%%TS  SD  20260425  050258  MANI0011    REL-V7R5M0  5770-WDS     
+0000.60      A                                      CF03(03 'exit')             
+0000.70      A                                      CF05(05 'refresh')          
+0000.80      A                                      CF12(12 'cancel')           
+0000.90      A                                  1  3'USER: EMPLOYEE'            
+0001.00      A                                  1 25'EMPLOYEE LEAVE MANAGEMENT  
+0001.10      A                                      DSPATR(HI)                  
+0001.20      A                                  2 32'EMPLOYEE DASHBOARD'        
+0001.30      A                                      DSPATR(HI)                  
+0001.40      A                                  1 73DATE                        
+0001.50      A                                      EDTCDE(Y)                   
+0001.60      A                                  2 73TIME                        
+0001.70      A                                  5  3'Select one of the followin 
+0001.80      A                                  7  3'1: Apply Comp-offs.'       
+0001.90      A                                  8  3'2: Apply Leaves.'          
+0002.00      A                                  9  3'3: Leave Status.'          
+0002.10      A                                 10  3'4: Comp-off Status.'       
+0002.20      A                                 11  3'5: View Holidays.'         
+0002.30      A                                 12  3'6: Change Password.'       
+0002.40      A                                 13  3'7: Sign Off.'              
+0002.50      A                                 18  3'Selection ===>'            
+0002.60      A            $OPTION        1A  B 18 19DSPATR(HI)    
+0002.70      A                                 23  4'F3=EXIT'     
+0002.80      A                                 23 23'F5=REFRESH'  
+0002.90      A                                 23 45'F12=CANCEL'  

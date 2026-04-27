@@ -1,0 +1,19 @@
+  
+0001.00 A               R LFREC                     PFILE(EMPMASTER)            
+0002.00 A                 EMPID          5S 0       TEXT('EMPLOYEE ID')         
+0003.00 A                 EMPNAME       30A         TEXT('EMPLOYEE NAME')       
+0004.00 A                 ADDRESS       30A         TEXT('EMPLOYEE ADDRESS')    
+0005.00 A                 CITY          15A         TEXT('EMPLOYEE CURRENT CITY 
+0006.00 A                 STATE         15A         TEXT('EMPLOYEE STATE')      
+0007.00 A                 COUNTRY       15A         TEXT('EMPLOYEE CITY')       
+0008.00 A                 PINCODE        6S 0       TEXT('EMPLOYEE PINCODE')    
+0009.00 A                 GENDER         1A         TEXT('EMPLOYEE GENDER M/F') 
+0010.00 A                 DOB            8S 0       TEXT('EMPLOYEE DATE-OF-JOIN 
+0011.00 A                 DOJ            8S 0       TEXT('EMPLOYEE DATE-OF-BIRT 
+0012.00 A                 CONTNO        10S 0       TEXT('EMPLOYEE PERSONAL CON 
+0013.00 A                 EMAILP        30A         TEXT('EMPLOYEE PERSONAL MAI 
+0014.00 A                 EMAILO        30A         TEXT('EMPLOYEE OFFICE MAIL' 
+0015.00 A                 TEAM          10A         TEXT('EMPLOYEE TEAM NUMBER' 
+0016.00 A                 MGRID          4S 0       TEXT('MANAGER ID')          
+                                                                                
+    

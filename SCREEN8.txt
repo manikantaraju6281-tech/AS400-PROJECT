@@ -1,0 +1,35 @@
+0000.10      A*%%TS  SD  20260421  130028  MANI0011    REL-V7R5M0  5770-WDS     
+0000.20      A*%%EC                                                             
+0000.30      A                                      DSPSIZ(24 80 *DS3)          
+0000.40      A          R SCR8                                                  
+0000.50      A*%%TS  SD  20260421  130028  MANI0011    REL-V7R5M0  5770-WDS     
+0000.60      A                                      CF03(03 'EXIT')             
+0000.70      A                                      CF05(05 'REFRESH')          
+0000.80      A                                      CF12(12 'CANCEL')           
+0000.90      A                                  1  3'USER: MANAGER'             
+0001.00      A                                  1 25'EMPLOYEE LEAVE MANAGEMENT  
+0001.10      A                                      DSPATR(HI)                  
+0001.20      A                                  2 35'APPLY LEAVES'              
+0001.30      A                                      DSPATR(HI)                  
+0001.40      A                                  1 73DATE                        
+0001.50      A                                      EDTCDE(Y)                   
+0001.60      A                                  2 73TIME                        
+0001.70      A                                  4  3'Select one of the followin 
+0001.80      A                                  5  4'1=Apply Casual Leaves'     
+0001.90      A                                      DSPATR(HI)                  
+0002.00      A                                  6  4'2=Apply Earned Leave'      
+0002.10      A                                      DSPATR(HI)                  
+0002.20      A                                  7  4'3=Apply Comp Off Leave'    
+0002.30      A                                      DSPATR(HI)                  
+0002.40      A                                 10  4'Casual Leaves :'           
+0002.50      A            $CASLEAVES     2  0B 10 21DSPATR(HI)                  
+0002.60      A                                 12  4'Earned Leaves :'   
+0002.70      A            $EARLEAVES     2  0B 12 21DSPATR(HI)          
+0002.80      A                                 14  4'Comp Off Leaves :' 
+0002.90      A            $COMLEAVES     2  0B 14 23DSPATR(HI)          
+0003.00      A                                 17  4'Selection'         
+0003.10      A                                 18  4'====>'             
+0003.20      A            $OPTION        1  0B 18 11DSPATR(HI)          
+0003.30      A                                 23  4'F3=EXIT'           
+0003.40      A                                 23 21'F5=REFRESH'        
+0003.50      A                                 23 42'F12=CANCEL'

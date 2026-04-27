@@ -1,0 +1,6 @@
+0001.00 C               R PFREC                
+0002.00 C                 EMPID          5S 0  
+0003.00 C                 CASLEAVES      2S 0  
+0004.00 C                 EARLEAVES      2S 0  
+0005.00 C                 COMLEAVES      2S 0  
+0006.00 C               K EMPID                

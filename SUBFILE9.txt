@@ -1,0 +1,45 @@
+0000.10      A*%%TS  SD  20260425  175734  MANI0011    REL-V7R5M0  5770-WDS 
+0000.20      A*%%EC                                                         
+0000.30      A                                      DSPSIZ(24 80 *DS3)      
+0000.40      A          R SFLRCD                    SFL                     
+0000.50      A*%%TS  SD  20260425  175734  MANI0011    REL-V7R5M0  5770-WDS 
+0000.60      A                                      TEXT('Y')               
+0000.70      A            $OPT           1S 0B  9  3DSPATR(HI)              
+0000.80      A            $DATE          8Y 0B  9 15DSPATR(HI)              
+0000.90      A                                      EDTWRD('  /  /    ')    
+0001.00      A            $REASON       15A  B  9 29DSPATR(HI)              
+0001.10      A            $STATUS        1A  B  9 72DSPATR(HI)              
+0001.20      A            $ADJUNIT       2S 0B  9 50DSPATR(HI)              
+0001.30      A          R SFLCTL                    SFLCTL(SFLRCD)          
+0001.40      A*%%TS  SD  20260422  043820  MANI0011    REL-V7R5M0  5770-WDS 
+0001.50      A                                      CF03(03 'EXIT')         
+0001.60      A                                      CF05(05 'REFRESH')      
+0001.70      A                                      CF12(12 'CANCEL')
+0001.80      A                                      OVERLAY          
+0001.90      A  25                                  SFLDSP           
+0002.00      A  26                                  SFLDSPCTL        
+0002.10      A  27                                  SFLCLR           
+0002.20      A  28                                  SFLEND(*MORE)    
+0002.30      A                                      SFLSIZ(9992)     
+0002.40      A                                      SFLPAG(0011)     
+0002.50      A                                  1  3'USER: MANAGER'  
+0002.60      A                                  1 25'EMPLOYEE LEAVE MANAGEMENT  
+0002.70      A                                      DSPATR(HI)                  
+0002.80      A                                  2 33'COMP OFF STATUS'           
+0002.90      A                                      DSPATR(HI)                  
+0003.00      A                                  1 72DATE                        
+0003.10      A                                      EDTCDE(Y)                   
+0003.20      A                                  2 72TIME                        
+0003.30      A                                  5  3'Press 1 to cancel the appl 
+0003.40      A                                      -off'                       
+0003.50      A                                  8  3'Opt'                   
+0003.60      A                                  8 15'Date'                  
+0003.70      A                                  8 29'Reason'                
+0003.80      A                                  8 50'Adjusted Unit'         
+0003.90      A                                  8 72'Status'                
+0004.00      A          R FOOTER                                            
+0004.10      A*%%TS  SD  20260422  043820  MANI0011    REL-V7R5M0  5770-WDS 
+0004.20      A                                      OVERLAY                 
+0004.30      A                                 23  3'F3=EXIT'               
+0004.40      A                                 23 19'F5=REFRESH' 
+0004.50      A                                 23 38'F12=CANCEL' 

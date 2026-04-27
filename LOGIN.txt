@@ -1,0 +1,5 @@
+0001.00 A               R LOGREC                                              
+0002.00 A                 USERNAME      15A         TEXT('EMPLOYEE LOGIN ID') 
+0003.00 A                 PASSWORD      30A         TEXT('PASSWORD')          
+0004.00 A               K USERNAME                                            
+        

@@ -1,0 +1,24 @@
+0000.10      A*%%TS  SD  20260403  173333  MANI0011    REL-V7R5M0  5770-WDS     
+0000.20      A*%%EC                                                             
+0000.30      A                                      DSPSIZ(24 80 *DS3)          
+0000.40      A          R SCR3                                                  
+0000.50      A*%%TS  SD  20260403  173333  MANI0011    REL-V7R5M0  5770-WDS     
+0000.60      A                                      CF03(03 'EXIT')             
+0000.70      A                                      CF12(12 'CANCEL')           
+0000.80      A                                      CF05(05 'REFRESH')          
+0000.90      A                                  1  3'USER: MANAGER'             
+0001.00      A                                  1 28'Employee Management System 
+0001.10      A                                      DSPATR(HI)                  
+0001.20      A                                  2 34'Manager Login'             
+0001.30      A                                      DSPATR(HI)                  
+0001.40      A                                  1 71DATE                        
+0001.50      A                                      EDTCDE(Y)                   
+0001.60      A                                  2 71TIME                        
+0001.70      A                                  8 17'MANAGERID  :' 
+0001.80      A            $MNGRID       10   B  8 33               
+0001.90      A                                 10 17'PASSWORD   :' 
+0002.00      A            $PASSWORD      8   B 10 33               
+0002.10      A            MSG           30   O 24  3               
+0002.20      A                                 23  5'F3=EXIT'      
+0002.30      A                                 23 21'F12=CANCEL'   
+0002.40      A                                 23 41'F5=REFRESH'                                                                                   

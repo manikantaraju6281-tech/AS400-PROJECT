@@ -67,5 +67,50 @@ Detailed case study, ER diagram, PF structures, flowcharts, and screen designs:
 - Validation-heavy design
 - Payroll-supportive leave tracking
 
+# System Screenshots
+
+## 1. Admin Dashboard
+The Admin Dashboard is the primary control panel for administrative operations. It allows the admin to manage employee records, update or delete employee details, display employee information, and manage holiday records. It also supports navigation through function keys for adding employees and holiday maintenance.
+
+### Key Functions:
+- Add Employee (F6)
+- View Holidays (F7)
+- Update Holidays (F8)
+- Add Holiday (F10)
+- Update/Delete/Display Employees
+
+![Admin Dashboard](screenshots/admin-dashboard.png)
+
+## 2. Update Employee Data
+
+This screen represents the Update Employee Data module of the Employee Leave Management System on IBM i (AS400). It allows administrators to modify and maintain employee information such as Employee ID, Name, City, and Role.
+
+The screen is designed for quick employee data maintenance with a structured form-based interface, ensuring that employee records remain accurate and up to date.
+
+### Features:
+- Update employee master details
+- Modify employee city/location
+- Update employee role classification
+- Maintain employee records securely
+- Form-based data editing with validation support
+
+### Fields Available:
+- Employee ID
+- Employee Name
+- City
+- Role
+
+### Function Keys:
+- F3 = Exit
+- F5 = Refresh
+- F12 = Cancel
+
+### Purpose:
+This module helps the admin manage employee profile changes efficiently while maintaining data consistency in the Employee Master Physical File (EMPMASTER PF).
+
+![Update Employee Data](screenshots/update-employee-data.png)
+
+
+
 ## Author
 Manikanta Raju

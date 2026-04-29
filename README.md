@@ -625,6 +625,38 @@ Enables managers to verify employee extra work claims before approving or denyin
 
 ![Comp-Off Description](screenshots/comp-off-description.png)
 
+## 2.6. Apply Comp-Off
+
+This screen allows employees to apply for comp-off by submitting worked date, number of extra days worked, reason, and project ID.
+
+### Key Features:
+- Apply for comp-off
+- Enter worked date
+- Select extra worked days
+- Submit work reason
+- Project ID mapping
+
+### Purpose:
+Enables employees to request compensatory off for additional workdays, supporting fair leave compensation and work-life balance.
+
+![Apply Comp-Off](screenshots/apply-comp-off.png)
+
+## 2.7. Apply Leaves
+
+This screen allows employees or managers to apply for different leave types based on available leave balances.
+
+### Key Features:
+- Apply Casual Leave
+- Apply Earned Leave
+- Apply Comp-Off Leave
+- View available leave balances
+- Leave type selection
+
+### Purpose:
+Provides a centralized leave application interface for selecting and applying appropriate leave categories efficiently.
+
+![Apply Leaves](screenshots/apply-leaves.png)
+
 
 ## Author
 Manikanta Raju

@@ -110,6 +110,66 @@ This module helps the admin manage employee profile changes efficiently while ma
 
 ![Update Employee Data](screenshots/update-employee-data.png)
 
+## 3. Display Employee Data
+
+This screen represents the Display Employee Data module of the Employee Leave Management System developed on IBM i (AS400). It provides a comprehensive employee profile view, allowing administrators and managers to access complete employee details in a structured read-only format.
+
+The screen centralizes employee master information, including personal details, professional details, contact information, project assignment, and role classification. It is primarily used for employee verification, record review, and administrative reference.
+
+### Features:
+- View complete employee profile
+- Employee ID-based record retrieval
+- Personal information display
+- Contact details display
+- Team and project assignment visibility
+- Manager association tracking
+- Employment role and status display
+- Read-only secure display mode
+
+### Employee Details Displayed:
+- Employee ID
+- Name
+- Gender
+- Date of Birth (DOB)
+- Date of Joining (DOJ)
+- Address
+- Country
+- Pin Code
+- City
+- Mobile Number
+- Alternate Number
+- Project ID
+- Manager ID
+- Designation
+- Office Email
+- Personal Email
+- Employee Status
+- Role
+
+### Sample Employee Record:
+- Employee ID: 110
+- Name: MANIKANTA
+- City: VIJAYAWADA
+- Team: DEV01
+- Project ID: PRJ001
+- Designation: RPG Developer
+- Role: Employee
+
+### Function Keys:
+- F3 = Exit
+- F12 = Cancel
+
+### Purpose:
+This module ensures that administrators and managers can verify employee information accurately without modifying data. It improves transparency, data validation, and employee profile tracking while supporting enterprise HR workflows.
+
+### Business Value:
+- Employee profile auditing
+- Administrative verification
+- Project-team mapping
+- Role validation
+- Employee master data review
+
+![Display Employee Data](screenshots/display-employee-data.png)
 
 
 ## Author

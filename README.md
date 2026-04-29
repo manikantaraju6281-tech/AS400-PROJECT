@@ -273,6 +273,56 @@ Employees and administrators can use this screen to verify official holidays bef
 
 ![View Holidays](screenshots/view-holidays.png)
 
+## 6. Update Holiday
+
+This screen represents the Update Holiday module of the Employee Leave Management System developed on IBM i (AS400). It allows administrators to modify existing holiday records by updating holiday dates, day information, and holiday remarks.
+
+The module is designed to maintain an accurate organizational holiday calendar by enabling holiday schedule corrections, policy changes, and event updates.
+
+### Features:
+- Update existing holiday records
+- Modify holiday date
+- Update day information
+- Change holiday remarks / occasion details
+- Holiday calendar correction
+- Administrative holiday maintenance
+- Centralized company holiday control
+
+### Fields Available:
+- Date
+- Day
+- Remarks
+
+### Purpose:
+This module ensures that administrators can maintain and revise holiday schedules as organizational policies or calendar requirements change.
+
+### Function Keys:
+- F3 = Exit
+- F5 = Refresh
+- F12 = Cancel
+
+### Business Value:
+- Holiday policy maintenance
+- Organizational calendar accuracy
+- Leave planning consistency
+- Workforce schedule synchronization
+- HR holiday administration
+
+### Key Benefits:
+- Keeps holiday records updated
+- Supports policy modifications
+- Reduces scheduling conflicts
+- Improves leave planning accuracy
+- Enhances administrative flexibility
+
+### Use Case:
+When a holiday is rescheduled, corrected, or renamed, administrators can use this screen to update the holiday database without deleting and recreating records.
+
+### Administrative Importance:
+This module is essential for ensuring accurate holiday communication across Admin, Manager, and Employee modules.
+
+![Update Holiday](screenshots/update-holiday.png)
+
 
 ## Author
 Manikanta Raju

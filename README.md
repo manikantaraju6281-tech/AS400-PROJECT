@@ -130,7 +130,7 @@ Admin Login → Credential Verification → Role Validation → Admin Dashboard
 
 This login screen forms the first layer of security for the Admin module and acts as the foundation for controlled system administration.
 
-![Admin Login Page](screenshots/ADMIN/admin-login-page.png)
+![Admin Login Page](/AS400-PROJECT/SCREENSHOTS/ADMIN/admin-login-page.png)
 
 
 ## 2. Admin Dashboard

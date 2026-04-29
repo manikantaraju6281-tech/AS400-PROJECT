@@ -714,6 +714,22 @@ This screen allows users to securely update their account password.
 ### Purpose:
 Enhances account security by enabling users to regularly update and protect login credentials.
 
+## 3. Employee Dashboard
+
+This is the main dashboard for employee users, providing access to self-service leave and comp-off functionalities.
+
+### Key Features:
+- Apply Comp-off
+- Apply Leaves
+- View Leave Status
+- View Comp-off Status
+- View Holidays
+- Change Password
+- Secure Sign Off
+
+### Purpose:
+Acts as the central navigation panel for employees to manage personal leave activities, track requests, and access essential system features.
+
 
 ## Author
 Manikanta Raju

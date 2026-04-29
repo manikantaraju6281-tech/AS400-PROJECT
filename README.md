@@ -686,6 +686,34 @@ This screen allows users to track the status of applied compensatory off request
 ### Purpose:
 Provides transparency for comp-off requests and helps employees or managers monitor approval progress efficiently.
 
+## 2.10. View Holidays
+
+This screen displays the official holiday calendar for employees and managers.
+
+### Key Features:
+- Holiday date list
+- Day name display
+- Holiday remarks / occasion details
+- Supports organization-wide holiday planning
+- Quick reference for leave and attendance scheduling
+
+### Purpose:
+Helps users stay informed about upcoming holidays and official non-working days for better leave planning.
+
+## 2.11. Change Password
+
+This screen allows users to securely update their account password.
+
+### Key Features:
+- User identification field
+- Current password verification
+- New password entry
+- Password confirmation field
+- Secure credential update process
+
+### Purpose:
+Enhances account security by enabling users to regularly update and protect login credentials.
+
 
 ## Author
 Manikanta Raju

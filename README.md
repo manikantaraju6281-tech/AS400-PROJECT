@@ -541,6 +541,22 @@ Helps managers monitor team members and access employee information for supervis
 
 ![Employee Details](screenshots/manager-employee-details.png)
 
+## 2.3.1. View Employee (Full Details)
+
+This screen displays complete employee profile information for managers, including personal details, contact details, project details, and role information.
+
+### Key Features:
+- Full employee profile view
+- Personal and professional details
+- Contact information
+- Project and manager mapping
+- Role and status tracking
+
+### Purpose:
+Helps managers review detailed employee information for team supervision, verification, and operational management.
+
+![View Employee Full Details](screenshots/view-employee-full-details.png)
+
 
 ## Author
 Manikanta Raju

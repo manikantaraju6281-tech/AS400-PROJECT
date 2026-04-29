@@ -591,6 +591,40 @@ Enables managers to make informed approval or denial decisions based on complete
 
 ![Leave Description](screenshots/leave-description.png)
 
+## 2.5. Approve / Deny Comp-Offs
+
+This screen allows managers to review employee comp-off requests, approve or deny submissions, and access detailed comp-off descriptions.
+
+### Key Features:
+- Approve comp-off requests
+- Deny comp-off requests
+- View comp-off description
+- Track worked date and day type
+- Monitor request status
+
+### Purpose:
+Helps managers validate extra workday compensation requests and manage comp-off approvals efficiently.
+
+![Approve / Deny Comp-Offs](screenshots/approve-deny-comp-offs.png)
+
+---
+
+## 2.5.1. Comp-Off Description
+
+This screen provides complete comp-off request details including worked date, day type, reason, project ID, and request status.
+
+### Key Features:
+- View detailed comp-off request
+- Check work reason
+- Track project assignment
+- Review request status
+- Decision support for approvals
+
+### Purpose:
+Enables managers to verify employee extra work claims before approving or denying comp-off requests.
+
+![Comp-Off Description](screenshots/comp-off-description.png)
+
 
 ## Author
 Manikanta Raju

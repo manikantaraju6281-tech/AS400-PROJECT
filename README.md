@@ -69,7 +69,71 @@ Detailed case study, ER diagram, PF structures, flowcharts, and screen designs:
 
 # System Screenshots
 
-## 1. Admin Dashboard
+## 1. Admin Login Page
+
+This screen represents the Admin Login Page of the Employee Leave Management System developed on IBM i (AS400). It serves as the primary authentication gateway for administrative users, ensuring secure access to the system’s core management functionalities.
+
+The login page validates administrator credentials before granting access to the Admin Dashboard, where employee management, holiday administration, and system governance operations are performed.
+
+### Purpose:
+The Admin Login module is designed to authenticate authorized administrators and protect sensitive organizational data through credential verification.
+
+### Features:
+- Secure username authentication
+- Password-based access control
+- Role verification for Admin access
+- Protected entry point to Admin Dashboard
+- Unauthorized access prevention
+- System-level administrative security
+
+### Login Fields:
+- Username
+- Password
+
+### Sample Credentials:
+- Username: MANI0011
+- Password: Secured / Hidden
+
+### Function Keys:
+- F3 = Exit
+- F5 = Refresh
+- F12 = Cancel
+
+### Security Benefits:
+- Restricted administrative access
+- Role-based dashboard authorization
+- Credential validation
+- Data protection
+- Prevents unauthorized system entry
+
+### Authentication Flow:
+Admin Login → Credential Verification → Role Validation → Admin Dashboard
+
+### Business Value:
+- Ensures only authorized administrators can manage employees
+- Protects employee records and leave policies
+- Supports enterprise security governance
+- Maintains system integrity
+
+### Key Benefits:
+- Centralized admin authentication
+- Secure entry mechanism
+- Controlled administrative privileges
+- Improved organizational security
+
+### Administrative Access Includes:
+- Employee Add / Update / Delete
+- Holiday Management
+- Role Assignment
+- System Monitoring
+- Leave Governance
+
+This login screen forms the first layer of security for the Admin module and acts as the foundation for controlled system administration.
+
+![Admin Login Page](screenshots/admin-login-page.png)
+
+
+## 2. Admin Dashboard
 The Admin Dashboard is the primary control panel for administrative operations. It allows the admin to manage employee records, update or delete employee details, display employee information, and manage holiday records. It also supports navigation through function keys for adding employees and holiday maintenance.
 
 ### Key Functions:
@@ -81,7 +145,7 @@ The Admin Dashboard is the primary control panel for administrative operations. 
 
 ![Admin Dashboard](screenshots/admin-dashboard.png)
 
-## 2. Update Employee Data
+## 3. Update Employee Data
 
 This screen represents the Update Employee Data module of the Employee Leave Management System on IBM i (AS400). It allows administrators to modify and maintain employee information such as Employee ID, Name, City, and Role.
 
@@ -110,7 +174,7 @@ This module helps the admin manage employee profile changes efficiently while ma
 
 ![Update Employee Data](screenshots/update-employee-data.png)
 
-## 3. Display Employee Data
+## 4. Display Employee Data
 
 This screen represents the Display Employee Data module of the Employee Leave Management System developed on IBM i (AS400). It provides a comprehensive employee profile view, allowing administrators and managers to access complete employee details in a structured read-only format.
 
@@ -171,7 +235,7 @@ This module ensures that administrators and managers can verify employee informa
 
 ![Display Employee Data](screenshots/display-employee-data.png)
 
-## 4. Add Employee Data
+## 5. Add Employee Data
 
 This screen represents the Add Employee Data module of the Employee Leave Management System developed on IBM i (AS400). It is designed for administrators to register new employees into the system by capturing essential employee information and creating a new employee master record.
 
@@ -221,7 +285,7 @@ This module is used to onboard new employees into the Employee Leave Management 
 
 ![Add Employee Data](screenshots/add-employee-data.png)
 
-## 5. View Holidays
+## 6. View Holidays
 
 This screen represents the View Holidays module of the Employee Leave Management System developed on IBM i (AS400). It enables administrators and employees to view official company holidays, scheduled leave dates, and holiday remarks in a structured format.
 
@@ -273,7 +337,7 @@ Employees and administrators can use this screen to verify official holidays bef
 
 ![View Holidays](screenshots/view-holidays.png)
 
-## 6. Update Holiday
+## 7. Update Holiday
 
 This screen represents the Update Holiday module of the Employee Leave Management System developed on IBM i (AS400). It allows administrators to modify existing holiday records by updating holiday dates, day information, and holiday remarks.
 
@@ -323,7 +387,7 @@ This module is essential for ensuring accurate holiday communication across Admi
 
 ![Update Holiday](screenshots/update-holiday.png)
 
-## 7. Holiday Management Dashboard
+## 8. Holiday Management Dashboard
 
 This screen represents the Holiday Management Dashboard of the Employee Leave Management System developed on IBM i (AS400). It serves as a centralized holiday administration interface where administrators can view, verify, and manage organizational holiday records.
 

@@ -657,6 +657,35 @@ Provides a centralized leave application interface for selecting and applying ap
 
 ![Apply Leaves](screenshots/apply-leaves.png)
 
+## 2.8. Leave Status
+
+This screen enables employees to track the status of their applied leaves and manage pending requests.
+
+### Key Features:
+- View applied leave records
+- Check From Date and To Date
+- Track total leave days
+- Status visibility (Approved / Denied / Pending)
+- Leave type display
+- Cancel applied leave option
+
+### Purpose:
+Helps employees monitor leave requests in real time and cancel requests when necessary.
+
+## 2.9. Comp Off Status
+
+This screen allows users to track the status of applied compensatory off requests and manage approved or pending entries.
+
+### Key Features:
+- View applied comp-off date
+- Reason for comp-off request
+- Adjusted unit / earned comp-off count
+- Status tracking (Approved / Pending / Denied)
+- Cancel applied comp-off request option
+
+### Purpose:
+Provides transparency for comp-off requests and helps employees or managers monitor approval progress efficiently.
+
 
 ## Author
 Manikanta Raju

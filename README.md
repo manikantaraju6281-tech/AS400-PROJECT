@@ -221,6 +221,58 @@ This module is used to onboard new employees into the Employee Leave Management 
 
 ![Add Employee Data](screenshots/add-employee-data.png)
 
+## 5. View Holidays
+
+This screen represents the View Holidays module of the Employee Leave Management System developed on IBM i (AS400). It enables administrators and employees to view official company holidays, scheduled leave dates, and holiday remarks in a structured format.
+
+The module provides centralized holiday visibility to support workforce planning, leave scheduling, and operational transparency across the organization.
+
+### Features:
+- View holiday calendar details
+- Display official holiday date
+- Day identification (weekday mapping)
+- Holiday remark / occasion display
+- Centralized holiday tracking
+- Admin holiday reference
+- Employee leave planning support
+
+### Fields Available:
+- Date
+- Day
+- Remarks
+
+### Sample Holiday Record:
+- Date: 02/04/2026
+- Day: Thursday
+- Remarks: Leave
+
+### Function Keys:
+- F3 = Exit
+- F5 = Refresh
+- F12 = Refresh
+
+### Purpose:
+This module is designed to maintain transparency regarding organizational holidays and leave schedules, helping employees and management plan work effectively.
+
+### Business Value:
+- Holiday schedule awareness
+- Leave planning assistance
+- Company calendar management
+- Workforce scheduling support
+- Administrative holiday monitoring
+
+### Key Benefits:
+- Reduces holiday confusion
+- Improves leave coordination
+- Supports attendance planning
+- Simplifies company-wide holiday communication
+- Enhances employee scheduling efficiency
+
+### Use Case:
+Employees and administrators can use this screen to verify official holidays before applying for leave or scheduling work activities.
+
+![View Holidays](screenshots/view-holidays.png)
+
 
 ## Author
 Manikanta Raju

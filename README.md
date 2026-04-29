@@ -730,6 +730,74 @@ This is the main dashboard for employee users, providing access to self-service 
 ### Purpose:
 Acts as the central navigation panel for employees to manage personal leave activities, track requests, and access essential system features.
 
+## 3.1. Apply Comp Off
 
+This screen allows employees to apply for compensatory off by submitting workday details and justification.
+
+### Key Features:
+- From Date and To Date selection
+- From / To Day Type selection
+- Reason for comp-off request
+- Structured comp-off request form
+- Refresh and cancel options
+
+### Purpose:
+Enables employees to request compensatory leave for extra working days through a formal approval workflow.
+
+## 3.2. Leave Status (Employee View)
+
+This screen allows employees to view and manage their applied leave requests.
+
+### Key Features:
+- Displays From Date and To Date
+- Shows total number of leave days
+- Status tracking (Approved / Denied / Pending)
+- Leave type identification
+- Option to cancel applied leave
+
+### Purpose:
+Provides employees with a clear overview of their leave history and current request status, enabling better leave management.
+
+## 3.3. View Holidays (Employee View)
+
+This screen allows employees to check the company holiday calendar.
+
+### Key Features:
+- Displays holiday dates
+- Shows corresponding day names
+- Includes holiday remarks/details
+- Lists official holidays for planning leave in advance
+
+### Purpose:
+Helps employees stay informed about company holidays and plan work or leave schedules accordingly.
+
+## 3.4. Apply Leave (Employee View)
+
+This screen allows employees to submit leave requests.
+
+### Key Features:
+- From date selection
+- From day type (Full/Half day)
+- To date selection
+- To day type (Full/Half day)
+- Reason for leave entry
+- Leave request submission
+
+### Purpose:
+Enables employees to request planned leave by specifying dates, leave duration, and reason for approval by management.
+
+## 3.5. Change Password (Employee View)
+
+This screen allows employees to securely update their login password.
+
+### Key Features:
+- User ID display
+- Current password verification
+- New password entry
+- Confirm/verify new password
+- Secure password update process
+
+### Purpose:
+Ensures account security by allowing employees to change passwords whenever needed while validating existing credentials.
 ## Author
 Manikanta Raju

@@ -171,6 +171,56 @@ This module ensures that administrators and managers can verify employee informa
 
 ![Display Employee Data](screenshots/display-employee-data.png)
 
+## 4. Add Employee Data
+
+This screen represents the Add Employee Data module of the Employee Leave Management System developed on IBM i (AS400). It is designed for administrators to register new employees into the system by capturing essential employee information and creating a new employee master record.
+
+The module supports structured employee onboarding by allowing the admin to assign a unique Employee ID, enter employee details, define location, and classify the employee role within the organization.
+
+### Features:
+- Add new employee records
+- Auto-generated Employee ID management
+- Employee profile creation
+- City/location assignment
+- Role classification (Admin / Manager / Employee)
+- Master data insertion into Employee PF
+- Structured form-based employee onboarding
+
+### Fields Available:
+- Employee ID
+- Employee Name
+- City
+- Role
+
+### Sample Employee Record:
+- Employee ID: 111
+- Name: ARUN
+- City: HYD (Hyderabad)
+- Role: Employee
+
+### Function Keys:
+- F3 = Exit
+- F5 = Refresh
+- F12 = Cancel
+
+### Purpose:
+This module is used to onboard new employees into the Employee Leave Management System while maintaining a structured and secure employee master database.
+
+### Business Value:
+- Employee onboarding automation
+- HR master data creation
+- Role-based system integration
+- Workforce database expansion
+- Administrative efficiency
+
+### Key Benefits:
+- Reduces manual employee registration effort
+- Ensures structured employee data entry
+- Supports future leave, payroll, and team assignment processes
+- Simplifies organizational employee management
+
+![Add Employee Data](screenshots/add-employee-data.png)
+
 
 ## Author
 Manikanta Raju

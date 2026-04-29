@@ -323,6 +323,60 @@ This module is essential for ensuring accurate holiday communication across Admi
 
 ![Update Holiday](screenshots/update-holiday.png)
 
+## 7. Holiday Management Dashboard
+
+This screen represents the Holiday Management Dashboard of the Employee Leave Management System developed on IBM i (AS400). It serves as a centralized holiday administration interface where administrators can view, verify, and manage organizational holiday records.
+
+The dashboard provides structured access to holiday-related data including date, day, and holiday remarks, ensuring that the company holiday calendar remains transparent and manageable.
+
+### Features:
+- Centralized holiday record management
+- View official company holidays
+- Track holiday dates and weekdays
+- Display holiday remarks / occasion descriptions
+- Holiday verification interface
+- Administrative holiday monitoring
+- Calendar transparency for leave planning
+
+### Fields Available:
+- Date
+- Day
+- Remarks
+
+### Function Keys:
+- F3 = Exit
+- F5 = Refresh
+- F12 = Refresh
+
+### Purpose:
+This module helps administrators maintain visibility into the holiday calendar and ensures that all holiday records are accessible for workforce planning and leave coordination.
+
+### Business Value:
+- Company holiday transparency
+- Workforce planning support
+- Leave scheduling assistance
+- Administrative holiday governance
+- Improved employee communication
+
+### Key Benefits:
+- Centralized holiday calendar
+- Easy holiday verification
+- Supports leave management decisions
+- Enhances planning accuracy
+- Reduces scheduling conflicts
+
+### Administrative Importance:
+The Holiday Management Dashboard acts as a core support module for:
+- Leave Management
+- Attendance Planning
+- Employee Scheduling
+- Holiday Policy Administration
+
+### Use Case:
+Administrators can review holiday schedules before adding, updating, or communicating holiday-related changes to employees and managers.
+
+![Holiday Management Dashboard](screenshots/holiday-management-dashboard.png)
+
 
 ## Author
 Manikanta Raju

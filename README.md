@@ -557,6 +557,40 @@ Helps managers review detailed employee information for team supervision, verifi
 
 ![View Employee Full Details](screenshots/view-employee-full-details.png)
 
+## 2.4. Approve / Deny Leaves
+
+This screen allows managers to review employee leave requests, approve or deny applications, and view leave descriptions before making decisions.
+
+### Key Features:
+- Approve leave requests
+- Deny leave requests
+- View leave description
+- Track leave dates and total days
+- Monitor leave status
+
+### Purpose:
+Helps managers efficiently control employee leave approvals while ensuring proper workforce planning.
+
+![Approve / Deny Leaves](screenshots/approve-deny-leaves.png)
+
+---
+
+## 2.4.1. Leave Description
+
+This screen provides complete leave request details including leave dates, leave type, total days, reason, and status for managerial review.
+
+### Key Features:
+- View detailed leave request
+- Check leave reason
+- Track leave balance
+- Review leave type and status
+- Decision support for approvals
+
+### Purpose:
+Enables managers to make informed approval or denial decisions based on complete leave request information.
+
+![Leave Description](screenshots/leave-description.png)
+
 
 ## Author
 Manikanta Raju

@@ -130,7 +130,7 @@ Admin Login → Credential Verification → Role Validation → Admin Dashboard
 
 This login screen forms the first layer of security for the Admin module and acts as the foundation for controlled system administration.
 
-![Admin Login Page](screenshots/admin-login-page.png)
+![Admin Login Page](screenshots/ADMIN/admin-login-page.png)
 
 
 ## 2. Admin Dashboard
@@ -143,7 +143,7 @@ The Admin Dashboard is the primary control panel for administrative operations. 
 - Add Holiday (F10)
 - Update/Delete/Display Employees
 
-![Admin Dashboard](screenshots/admin-dashboard.png)
+![Admin Dashboard](screenshots/ADMIN/admin-dashboard.png)
 
 ## 3. Update Employee Data
 
@@ -172,7 +172,7 @@ The screen is designed for quick employee data maintenance with a structured for
 ### Purpose:
 This module helps the admin manage employee profile changes efficiently while maintaining data consistency in the Employee Master Physical File (EMPMASTER PF).
 
-![Update Employee Data](screenshots/update-employee-data.png)
+![Update Employee Data](screenshots/ADMIN/update-employee-data.png)
 
 ## 4. Display Employee Data
 
@@ -233,7 +233,7 @@ This module ensures that administrators and managers can verify employee informa
 - Role validation
 - Employee master data review
 
-![Display Employee Data](screenshots/display-employee-data.png)
+![Display Employee Data](screenshots/ADMIN/display-employee-data.png)
 
 ## 5. Add Employee Data
 
@@ -283,7 +283,7 @@ This module is used to onboard new employees into the Employee Leave Management 
 - Supports future leave, payroll, and team assignment processes
 - Simplifies organizational employee management
 
-![Add Employee Data](screenshots/add-employee-data.png)
+![Add Employee Data](screenshots/ADMIN/add-employee-data.png)
 
 ## 6. View Holidays
 
@@ -335,7 +335,7 @@ This module is designed to maintain transparency regarding organizational holida
 ### Use Case:
 Employees and administrators can use this screen to verify official holidays before applying for leave or scheduling work activities.
 
-![View Holidays](screenshots/view-holidays.png)
+![View Holidays](screenshots/ADMIN/view-holidays.png)
 
 ## 7. Update Holiday
 
@@ -385,7 +385,7 @@ When a holiday is rescheduled, corrected, or renamed, administrators can use thi
 ### Administrative Importance:
 This module is essential for ensuring accurate holiday communication across Admin, Manager, and Employee modules.
 
-![Update Holiday](screenshots/update-holiday.png)
+![Update Holiday](screenshots/ADMIN/update-holiday.png)
 
 ## 8. Holiday Management Dashboard
 
@@ -439,7 +439,7 @@ The Holiday Management Dashboard acts as a core support module for:
 ### Use Case:
 Administrators can review holiday schedules before adding, updating, or communicating holiday-related changes to employees and managers.
 
-![Holiday Management Dashboard](screenshots/holiday-management-dashboard.png)
+![Holiday Management Dashboard](screenshots/ADMIN/holiday-management-dashboard.png)
 
 ## 2.1. Manager Login Page
 
@@ -505,7 +505,7 @@ Manager Login → Credential Verification → Role Validation → Manager Dashbo
 
 This login page acts as the primary security and access control layer for the Manager module, ensuring proper team governance within the Employee Leave Management System.
 
-![Manager Login Page](screenshots/manager-login-page.png)
+![Manager Login Page](screenshots/MANAGER/manager-login-page.png)
 
 ## 2.2. Manager Dashboard
 
@@ -524,7 +524,7 @@ This screen represents the Manager Dashboard of the Employee Leave Management Sy
 ### Purpose:
 The dashboard serves as the central control panel for managers to oversee team leave management and employee-related operations efficiently.
 
-![Manager Dashboard](screenshots/manager-dashboard.png)
+![Manager Dashboard](screenshots/MANAGER/manager-dashboard.png)
 
 ## 2.3. Employee Details (Manager View)
 
@@ -539,7 +539,7 @@ This screen allows managers to view employee records including Employee ID, Name
 ### Purpose:
 Helps managers monitor team members and access employee information for supervision and decision-making.
 
-![Employee Details](screenshots/manager-employee-details.png)
+![Employee Details](screenshots/MANAGER/manager-employee-details.png)
 
 ## 2.3.1. View Employee (Full Details)
 
@@ -555,7 +555,7 @@ This screen displays complete employee profile information for managers, includi
 ### Purpose:
 Helps managers review detailed employee information for team supervision, verification, and operational management.
 
-![View Employee Full Details](screenshots/view-employee-full-details.png)
+![View Employee Full Details](screenshots/MANAGER/view-employee-full-details.png)
 
 ## 2.4. Approve / Deny Leaves
 
@@ -571,7 +571,7 @@ This screen allows managers to review employee leave requests, approve or deny a
 ### Purpose:
 Helps managers efficiently control employee leave approvals while ensuring proper workforce planning.
 
-![Approve / Deny Leaves](screenshots/approve-deny-leaves.png)
+![Approve / Deny Leaves](screenshots/MANAGER/approve-deny-leaves.png)
 
 ---
 
@@ -589,7 +589,7 @@ This screen provides complete leave request details including leave dates, leave
 ### Purpose:
 Enables managers to make informed approval or denial decisions based on complete leave request information.
 
-![Leave Description](screenshots/leave-description.png)
+![Leave Description](screenshots/MANAGER/leave-description.png)
 
 ## 2.5. Approve / Deny Comp-Offs
 
@@ -605,7 +605,7 @@ This screen allows managers to review employee comp-off requests, approve or den
 ### Purpose:
 Helps managers validate extra workday compensation requests and manage comp-off approvals efficiently.
 
-![Approve / Deny Comp-Offs](screenshots/approve-deny-comp-offs.png)
+![Approve / Deny Comp-Offs](screenshots/MANAGER/approve-deny-comp-offs.png)
 
 ---
 
@@ -623,7 +623,7 @@ This screen provides complete comp-off request details including worked date, da
 ### Purpose:
 Enables managers to verify employee extra work claims before approving or denying comp-off requests.
 
-![Comp-Off Description](screenshots/comp-off-description.png)
+![Comp-Off Description](screenshots/MANAGER/comp-off-description.png)
 
 ## 2.6. Apply Comp-Off
 
@@ -639,7 +639,7 @@ This screen allows employees to apply for comp-off by submitting worked date, nu
 ### Purpose:
 Enables employees to request compensatory off for additional workdays, supporting fair leave compensation and work-life balance.
 
-![Apply Comp-Off](screenshots/apply-comp-off.png)
+![Apply Comp-Off](screenshots/MANAGER/apply-comp-off.png)
 
 ## 2.7. Apply Leaves
 
@@ -655,7 +655,7 @@ This screen allows employees or managers to apply for different leave types base
 ### Purpose:
 Provides a centralized leave application interface for selecting and applying appropriate leave categories efficiently.
 
-![Apply Leaves](screenshots/apply-leaves.png)
+![Apply Leaves](screenshots/MANAGER/apply-leaves.png)
 
 ## 2.8. Leave Status
 

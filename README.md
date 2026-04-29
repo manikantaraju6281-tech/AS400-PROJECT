@@ -507,6 +507,25 @@ This login page acts as the primary security and access control layer for the Ma
 
 ![Manager Login Page](screenshots/manager-login-page.png)
 
+## 2.2. Manager Dashboard
+
+This screen represents the Manager Dashboard of the Employee Leave Management System on IBM i (AS400). It provides managers with role-based access to supervise employee activities, manage leave workflows, and monitor team operations.
+
+### Key Features:
+- View Employee Details
+- Approve / Deny Leaves
+- Approve / Deny Comp-Off
+- Apply Leave / Comp-Off
+- Track Leave & Comp-Off Status
+- View Holidays
+- Change Password
+- Secure Sign Off
+
+### Purpose:
+The dashboard serves as the central control panel for managers to oversee team leave management and employee-related operations efficiently.
+
+![Manager Dashboard](screenshots/manager-dashboard.png)
+
 
 ## Author
 Manikanta Raju

@@ -526,6 +526,21 @@ The dashboard serves as the central control panel for managers to oversee team l
 
 ![Manager Dashboard](screenshots/manager-dashboard.png)
 
+## 2.3. Employee Details (Manager View)
+
+This screen allows managers to view employee records including Employee ID, Name, Team, and Designation.
+
+### Key Features:
+- View employee details
+- Team and designation tracking
+- Employee profile access
+- Quick detail lookup
+
+### Purpose:
+Helps managers monitor team members and access employee information for supervision and decision-making.
+
+![Employee Details](screenshots/manager-employee-details.png)
+
 
 ## Author
 Manikanta Raju

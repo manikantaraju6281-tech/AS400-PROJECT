@@ -441,6 +441,72 @@ Administrators can review holiday schedules before adding, updating, or communic
 
 ![Holiday Management Dashboard](screenshots/holiday-management-dashboard.png)
 
+## 2.1. Manager Login Page
+
+This screen represents the Manager Login Page of the Employee Leave Management System developed on IBM i (AS400). It serves as the secure authentication gateway for managerial users, allowing authorized managers to access team management, leave approvals, and employee oversight functionalities.
+
+The Manager Login module validates Manager ID and password credentials before granting access to the Manager Dashboard, ensuring that only authorized managerial personnel can supervise employee leave workflows and team operations.
+
+### Purpose:
+The Manager Login module is designed to provide secure role-based access for managers, enabling controlled entry into team supervision and leave governance functionalities.
+
+### Features:
+- Secure Manager ID authentication
+- Password-based managerial access
+- Role verification for Manager dashboard
+- Restricted access to team operations
+- Leave approval system entry
+- Unauthorized access prevention
+
+### Login Fields:
+- Manager ID
+- Password
+
+### Sample Credentials:
+- Manager ID: MANI0123
+- Password: Secured / Hidden
+
+### Function Keys:
+- F3 = Exit
+- F5 = Refresh
+- F12 = Cancel
+
+### Security Benefits:
+- Restricted managerial access
+- Team-level authorization
+- Role-based operational security
+- Credential verification
+- Protects team and leave governance data
+
+### Authentication Flow:
+Manager Login → Credential Verification → Role Validation → Manager Dashboard
+
+### Manager Responsibilities After Login:
+- View Team Members
+- Approve / Reject Leave Requests
+- Approve / Reject Comp-Off Requests
+- Monitor Team Leave Balances
+- Employee Team Oversight
+- Workforce Scheduling
+
+### Business Value:
+- Secure managerial supervision
+- Controlled leave approval workflows
+- Team governance
+- Hierarchical operational control
+- Enhanced workforce coordination
+
+### Key Benefits:
+- Protects managerial privileges
+- Supports team-based operations
+- Improves leave approval governance
+- Strengthens enterprise security
+- Enhances managerial accountability
+
+This login page acts as the primary security and access control layer for the Manager module, ensuring proper team governance within the Employee Leave Management System.
+
+![Manager Login Page](screenshots/manager-login-page.png)
+
 
 ## Author
 Manikanta Raju
